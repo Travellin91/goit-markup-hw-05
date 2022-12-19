@@ -14,7 +14,7 @@
   --footer-icon-color: #31d0aa;
   --costumers-border-color: #8e8f99;
   --media-color: #565766;
-  --modal-background-color: #E7E9FC;
+  --modal-background-color: #e7e9fc;
   --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -127,7 +127,6 @@ img {
   color: var(--title-color);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  
 }
 
 .header-list-item {
@@ -137,15 +136,12 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--primary-band);
-  
 }
 
 .header-contacts {
   list-style: none;
   display: flex;
   margin-left: auto;
-  
-  
 }
 
 .header-contact {
@@ -162,17 +158,15 @@ img {
   color: var(--primary-band);
 }
 
-.header-list-item::before{
+.header-list-item::before {
   background: var(--primary-band);
   border-radius: 2px;
-  }
-
-.header-list-item::after{
-background: var(--primary-band);
-border-radius: 2px;
 }
 
-
+.header-list-item::after {
+  background: var(--primary-band);
+  border-radius: 2px;
+}
 
 /*HERO*/
 
@@ -473,7 +467,7 @@ border-radius: 2px;
 .portfolio-card:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: transrorm 250ms linear, var(--transition-dur-and-func);
+  transition: transrorm 250ms linear, var(--transition-dur-and-func);
 }
 
 .portfolio-text {
@@ -503,7 +497,7 @@ border-radius: 2px;
   padding-bottom: 120px;
 }
 
-.overlay{
+.overlay {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -511,7 +505,7 @@ border-radius: 2px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: rgba(77, 90, 229, 70%);
-  color:var(--background-team-color); 
+  color: var(--background-team-color);
   padding-top: 40px;
   padding-right: 32px;
   padding-bottom: 164px;
@@ -524,18 +518,17 @@ border-radius: 2px;
   transition: transrorm 250ms linear, var(--transition-dur-and-func);
 }
 
-.portfilio-card-text-wrapper{
-position: relative;
-overflow: hidden;
-
+.portfilio-card-text-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
-.portfolio-card:hover .overlay{
+.portfolio-card:hover .overlay {
   transform: translate(0, 0);
   transition: var(--transition-dur-and-func);
 }
 
-.portfolio-card:focus .overlay{
+.portfolio-card:focus .overlay {
   transform: translate(0, 0);
   transition: var(--transition-dur-and-func);
 }
@@ -631,7 +624,7 @@ overflow: hidden;
 
 /*Modal-Window*/
 
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -639,17 +632,17 @@ overflow: hidden;
   height: 100%;
   z-index: 100;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--transition-dur-and-func), visibylity var(--transition-dur-and-func);
-
+  transition: opacity var(--transition-dur-and-func),
+    visibylity var(--transition-dur-and-func);
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.modal{
+.modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -657,11 +650,12 @@ overflow: hidden;
   width: 408px;
   height: 576px;
   border-radius: 4px;
-  background-color: #FCFCFC;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-close-button{
+.modal-close-button {
   top: 10px;
   right: 10px;
   width: 24px;
@@ -670,25 +664,25 @@ overflow: hidden;
   cursor: pointer;
   background-color: transparent;
   border: 1px solid #e5e5e5;
-  padding: 0;  
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--modal-background-color);
- border-radius: 50px;
- transition: var(--transition-dur-and-func);
+  border-radius: 50px;
+  transition: var(--transition-dur-and-func);
 }
 
-.modal-close-btm-icon{
+.modal-close-btm-icon {
   fill: currentColor;
 }
 
-.modal-close-button:hover{
+.modal-close-button:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.modal-close-button:focus{
+.modal-close-button:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
