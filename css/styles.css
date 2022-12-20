@@ -461,7 +461,6 @@ img {
   width: 360px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: block;
-  transition: transrorm 250ms linear, var(--transition-dur-and-func);
 }
 
 .portfolio-card:hover {
@@ -539,11 +538,12 @@ img {
   transition: var(--transition-dur-and-func);
 }
 
-.portfilio-card-text-wrapper:hover .overlay{ 
+.portfilio-card-text-wrapper-link:hover .overlay{ 
   transform: translate(0, 0);
+
 }
 
-.portfilio-card-text-wrapper:focus .overlay{
+.portfilio-card-text-wrapper-link:focus .overlay{
   transform: translate(0, 0);
 }
 
