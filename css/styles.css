@@ -100,6 +100,7 @@ img {
   width: 170px;
   height: 51px;
   border: 1px solid var(--primary-band);
+  transition: opacity 250ms, var(--transition-dur-and-func);
 }
 
 .btm:hover,
@@ -141,7 +142,7 @@ img {
   color: var(--primary-band);
 }
 
-.header-link::after{
+.header-link:active:after{
   content: '';
   width: 100%;
   height: 4px;
@@ -170,7 +171,7 @@ color: var(--primary-band);
   line-height: 1.2;
   color: var(--text-color);
   text-decoration: none;
-  transition: color 250ms var(--transition-dur-and-func);
+  transition: color 250ms, var(--transition-dur-and-func);
 }
 
 .header-contact:hover,
@@ -386,6 +387,7 @@ color: var(--primary-band);
   color: var(--costumers-border-color);
   align-items: center;
   justify-content: center;
+  transition: opacity 250ms, var(--transition-dur-and-func);
 }
 
 .customers-list-icon {
@@ -395,6 +397,7 @@ color: var(--primary-band);
 .customers-list-item:hover {
   color: var(--primary-band);
   border: 1px solid var(--primary-band);
+
 }
 
 .customers-list-icon:focus {
@@ -437,6 +440,7 @@ color: var(--primary-band);
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
+  transition: opacity 250ms, var(--transition-dur-and-func);
 }
 
 .portfolio-btm:hover,
@@ -472,18 +476,19 @@ color: var(--primary-band);
   width: 360px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: block;
+  transition: transform 250ms linear, var(--transition-dur-and-func);
 }
 
 .portfolio-card:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: transrorm 250ms linear, var(--transition-dur-and-func);
+
   }
 
   .portfolio-card:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: transrorm 250ms linear, var(--transition-dur-and-func);
+   
 }
 
 .portfolio-text {
@@ -541,12 +546,12 @@ color: var(--primary-band);
 
 .portfolio-card:hover .overlay {
   transform: translate(0, 0);
-  transition: var(--transition-dur-and-func);
+
 }
 
 .portfolio-card:focus .overlay {
   transform: translate(0, 0);
-  transition: var(--transition-dur-and-func);
+
 }
 
 .portfilio-card-text-wrapper-link:hover .overlay{ 
@@ -634,6 +639,7 @@ color: var(--primary-band);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 250ms, var(--transition-dur-and-func);
 }
 
 .social-media-icon {
@@ -642,9 +648,11 @@ color: var(--primary-band);
 
 .social-media-icon:hover {
   color: var(--footer-icon-color);
+  
 }
 .social-media-icon:focus {
   color: var(--footer-icon-color);
+
 }
 
 /*Modal-Window*/
@@ -661,10 +669,12 @@ color: var(--primary-band);
     visibylity var(--transition-dur-and-func);
 }
 
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: var(--transition-dur-and-func);
 }
 
 .modal {
