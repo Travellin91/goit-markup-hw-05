@@ -149,8 +149,7 @@ img {
   background-color: var(--primary-band) ;
   position: absolute;
   left: 0;
-  bottom:-27px;
-  position: absolute;
+  bottom: -27px;
 }
 
 .header-link:active::after{
