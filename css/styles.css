@@ -143,7 +143,7 @@ img {
   color: var(--header-color);
 }
 
-.header-link:active {
+.header-link-active:active {
   color: var(--header-color);
 }
 
