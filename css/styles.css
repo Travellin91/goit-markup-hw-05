@@ -145,7 +145,7 @@ img {
   color: var(--header-color);
 }
 
-.active{
+.active {
   color: var(--header-color);
   font-weight: 600;
   font-size: 16px;
@@ -414,18 +414,18 @@ img {
 }
 
 .customers-list-icon:hover {
- fill: var(--header-color);
+  fill: var(--header-color);
 }
 
 .customers-list-icon:focus {
-fill: var(--header-color);
+  fill: var(--header-color);
 }
 
-.customers-list-item:hover{
+.customers-list-item:hover {
   border: 1px solid var(--header-color);
 }
 
-.customers-list-item:focus{
+.customers-list-item:focus {
   border: 1px solid var(--header-color);
 }
 
@@ -463,7 +463,10 @@ fill: var(--header-color);
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
-  transition: background-color 250ms var(--transition-dur-and-func), border 250ms var(--transition-dur-and-func), color250ms var(--transition-dur-and-func), box-shadow 250ms var(--transition-dur-and-func);
+  transition: background-color 250ms var(--transition-dur-and-func),
+    border 250ms var(--transition-dur-and-func),
+    color250ms var(--transition-dur-and-func),
+    box-shadow 250ms var(--transition-dur-and-func);
 }
 
 .portfolio-btm:hover,
